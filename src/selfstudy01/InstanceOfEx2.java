@@ -1,4 +1,4 @@
-package day20210928;
+package selfstudy01;
 
 public class InstanceOfEx2 {
 
@@ -17,13 +17,13 @@ public class InstanceOfEx2 {
 class Work{
 	void doWork(Car7 c) {
 		if(c instanceof FireEngine7) {
-			FireEngine7 fe = (FireEngine7) c; //ºÎ¸ð -> ÀÚ¼ÕÀ¸·Î Çüº¯È¯ÀÌ´Ï ¸í½ÃÀû Å¸ÀÔÀ» Àû¾îÁÖ¾î¾ßÇÔ(´Ù¿îÄ³½ºÆÃ)
+			FireEngine7 fe = (FireEngine7) c; //ï¿½Î¸ï¿½ -> ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È¯ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½(ï¿½Ù¿ï¿½Ä³ï¿½ï¿½ï¿½ï¿½)
 			fe.water();
 		}else if(c instanceof Ambulance7) {
 			Ambulance7 a = (Ambulance7) c;
 			a.siren();
 		}else {
-			System.out.println("Çüº¯È¯ ¾ÈµÊ");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½È¯ ï¿½Èµï¿½");
 		}
 	}
 }
@@ -32,11 +32,11 @@ class Car7{
 }
 class FireEngine7 extends Car7{
 	void water(){
-		System.out.println("¹°»Ñ¸®±â");
+		System.out.println("ï¿½ï¿½ï¿½Ñ¸ï¿½ï¿½ï¿½");
 	}
 }
 class Ambulance7 extends Car7{
 	void siren() {
-		System.out.println("À§À×À§À×");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}
 }

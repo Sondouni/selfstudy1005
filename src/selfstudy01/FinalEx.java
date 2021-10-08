@@ -1,4 +1,4 @@
-package selfstudy;
+package selfstudy01;
 
 public class FinalEx {
 

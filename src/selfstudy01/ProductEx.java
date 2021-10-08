@@ -1,4 +1,4 @@
-package day20210928;
+package selfstudy01;
 
 public class ProductEx {
 	public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class ProductEx {
 	Product1 p2 = new Computer1();
 	Product1 p3 = new Radio1();
 	
-	Product1[] p = new Product1[3];//´ÙÇü¼º ¹è¿­
+	Product1[] p = new Product1[3];//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­
 	p[0]=new Tv1();
 	p[1]=new Computer1();
 	p[2]=new Radio1();

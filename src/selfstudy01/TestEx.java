@@ -1,4 +1,4 @@
-package day20210928;
+package selfstudy01;
 
 public class TestEx {
 	public static void main(String[] args) {
@@ -9,11 +9,11 @@ public class TestEx {
 class TestEx1{
 	
 }
-/*	´ë»ó 					»ç¿ë°¡´ÉÇÑ Á¢±ÙÁ¦¾îÀÚ
- * Å¬·¡½º						public,(default)
- * ¸Þ¼­µå						public,(default),protected,private
- * ¸â¹öº¯¼ö					¸Þ¼­µå¿Í µ¿ÀÏ
- * Áö¿ªº¯¼ö(¸Þ¼­µå¾È º¯¼ö)		¾øÀ½
+/*	ï¿½ï¿½ï¿½ 					ï¿½ï¿½ë°¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Å¬ï¿½ï¿½ï¿½ï¿½						public,(default)
+ * ï¿½Þ¼ï¿½ï¿½ï¿½						public,(default),protected,private
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½					ï¿½Þ¼ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Þ¼ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)		ï¿½ï¿½ï¿½ï¿½
  */
 
 

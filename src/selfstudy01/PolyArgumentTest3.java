@@ -1,4 +1,4 @@
-package day30;
+package selfstudy01;
 
 import java.util.Scanner;
 
@@ -17,25 +17,25 @@ class Product{
 class Tv extends Product{
 	Tv(){
 		super(200);
-		System.out.println("Tv¸¦ ±¸ÀÔÇÏ¼Ë½À´Ï´Ù.");
+		System.out.println("Tvï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼Ë½ï¿½ï¿½Ï´ï¿½.");
 	}
 }
 class Computer extends Product{
 	Computer(){
 		super(300);
-		System.out.println("Computer¸¦ ±¸ÀÔÇÏ¼Ë½À´Ï´Ù.");
+		System.out.println("Computerï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼Ë½ï¿½ï¿½Ï´ï¿½.");
 	}
 }
 class Air extends Product{
 	Air(){
 		super(100);
-		System.out.println("¿¡¾îÄÁÀ» ±¸ÀÔÇÏ¼Ë½À´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼Ë½ï¿½ï¿½Ï´ï¿½.");
 	}
 }
 class Bed extends Product{
 	Bed(){
 		super(500);
-		System.out.println("Bed¸¦ ±¸ÀÔÇÏ¼Ë½À´Ï´Ù.");
+		System.out.println("Bedï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼Ë½ï¿½ï¿½Ï´ï¿½.");
 	}
 }
 class Buyer{
@@ -45,8 +45,8 @@ class Buyer{
 	}
 	int buy(Product p){
 		if(myMoney<p.money) {
-			System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÏ¿© ¹°°ÇÀ» »ì¼ö ¾ø½À´Ï´Ù.");
-			System.out.println("±¸¸Å Ãë¼Ò");
+			System.out.println("ï¿½Ü¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½");
 			return -1;
 		}
 		myMoney-=p.money;
@@ -57,13 +57,13 @@ class Buyer{
 class Shopping{
 	Buyer b = new Buyer();
 	int putNum=0;
-	String[] str = { "Tv","¿¡¾îÄÁ","ÄÞÇ»Å¸","Ä§´ë"};
+	String[] str = { "Tv","ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½Ç»Å¸","Ä§ï¿½ï¿½"};
 	int charge;
 	int[] listNum=new int[str.length];
 	Scanner sc = new Scanner(System.in);
 	void selectProduct() {
 		while(true) {
-			System.out.println("¹°°ÇÀ» ¼±ÅÃÇÏ¼¼¿ä.>> 1.Tv(200) 2.¿¡¾îÄÁ(100) 3.ÄÄÇ»ÅÍ(300) 4.Ä§´ë(500) 5.ÃæÀüÇÏ±â 6 ³ª°¡±â");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.>> 1.Tv(200) 2.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(100) 3.ï¿½ï¿½Ç»ï¿½ï¿½(300) 4.Ä§ï¿½ï¿½(500) 5.ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ 6 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 			putNum =sc.nextInt();
 			if(putNum==1) {
 				if(b.buy(new Tv())!=-1) {
@@ -83,25 +83,25 @@ class Shopping{
 				print();
 				break;
 			}else {
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½");
 				continue;
 			}
 		}
 	}
 	void charging() {
-		System.out.printf("ÃæÀüÇÒ ±Ý¾×À» ÀÔ·ÂÇÏ½Ê¼î : (ÇöÀç ±Ý¾×Àº %dÀÔ´Ï´Ù) : ",b.myMoney);
+		System.out.printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý¾ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ê¼ï¿½ : (ï¿½ï¿½ï¿½ï¿½ ï¿½Ý¾ï¿½ï¿½ï¿½ %dï¿½Ô´Ï´ï¿½) : ",b.myMoney);
 		b.myMoney += sc.nextInt();
-		System.out.printf("ÃæÀü¿Ï·á! (ÇöÀç ±Ý¾×Àº %dÀÔ´Ï´Ù) : \n",b.myMoney);
+		System.out.printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½! (ï¿½ï¿½ï¿½ï¿½ ï¿½Ý¾ï¿½ï¿½ï¿½ %dï¿½Ô´Ï´ï¿½) : \n",b.myMoney);
 	}
 	void print() {
-		System.out.println("---------¿µ¼öÁõ--------");
+		System.out.println("---------ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½--------");
 		System.out.printf("Tv : %d\n",listNum[0]);
-		System.out.printf("¿¡¾îÄÁ : %d\n",listNum[1]);
-		System.out.printf("ÄÄÇ»ÅÍ : %d\n",listNum[2]);
-		System.out.printf("Ä§´ë : %d\n",listNum[3]);
-		System.out.printf("ÃÑ ±Ý¾× : %d\n",b.totalMoney);
-		System.out.printf("ÀÜ¾× : %d\n",b.myMoney);
-		System.out.printf("º¸³Ê½º Æ÷ÀÎÆ® : %d\n",b.totalMoney/10);
-		System.out.println("¼îÇÎÀ» ¸¶Ä¨´Ï´Ù!");
+		System.out.printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : %d\n",listNum[1]);
+		System.out.printf("ï¿½ï¿½Ç»ï¿½ï¿½ : %d\n",listNum[2]);
+		System.out.printf("Ä§ï¿½ï¿½ : %d\n",listNum[3]);
+		System.out.printf("ï¿½ï¿½ ï¿½Ý¾ï¿½ : %d\n",b.totalMoney);
+		System.out.printf("ï¿½Ü¾ï¿½ : %d\n",b.myMoney);
+		System.out.printf("ï¿½ï¿½ï¿½Ê½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® : %d\n",b.totalMoney/10);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¨ï¿½Ï´ï¿½!");
 	}
 }

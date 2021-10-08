@@ -1,4 +1,4 @@
-package selfstudy;
+package selfstudy01;
 
 import java.util.Arrays;
 
@@ -7,33 +7,33 @@ public class Abstract1 {
 	public static void main(String[] args) {
 		Buyer1 b = new Buyer1();
 		
-		b.buy(new Tv1());
-		b.buy(new Computer1());
+		b.buy(new Tv13());
+		b.buy(new Computer12());
 		b.buy(new Audio1());
 		b.summary();
 	}
 }
-class Product1{
+class Product12{
 	int price;
 	String productName;
-	Product1(int x,String str){
+	Product12(int x,String str){
 		price = x;
 		productName = str;
 	}
 }
-class Computer1 extends Product1{
-	Computer1(){
+class Computer12 extends Product12{
+	Computer12(){
 		super(200,"Computer");
 		System.out.println("��ǻ�͸� �����ϼ̽��ϴ�.");
 	}
 }
-class Tv1 extends Product1{
-	Tv1(){
+class Tv13 extends Product12{
+	Tv13(){
 		super(100,"TV");
 		System.out.println("Tv�� �����ϼ̽��ϴ�.");
 	}
 }
-class Audio1 extends Product1{
+class Audio1 extends Product12{
 	Audio1(){
 		super(50,"Audio");
 		System.out.println("������� �����ϼ̽��ϴ�.");
@@ -44,7 +44,7 @@ class Buyer1{
 	String buyName;
 	int productNum=0;
 	String[] list=new String[3];
-	void buy(Product1 p) {
+	void buy(Product12 p) {
 		sumMoney += p.price;
 		buyName=p.productName;
 		list[productNum] = buyName;

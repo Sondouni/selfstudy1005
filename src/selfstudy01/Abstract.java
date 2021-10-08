@@ -1,4 +1,4 @@
-package day20210928;
+package selfstudy01;
 
 public class Abstract {
 	public static void main(String[] args) {
@@ -17,12 +17,12 @@ abstract class Shape{
 class Rectangle extends Shape{
 	private int width, height;
 	public void draw() {
-		System.out.println("»ç°¢Çü ±×¸®±â");
+		System.out.println("ï¿½ç°¢ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½");
 	}
 }
 class Circle extends Shape{
 	private int radius;
 	public void draw() {
-		System.out.println("¿ø ±×¸®±â");
+		System.out.println("ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½");
 	}
 }

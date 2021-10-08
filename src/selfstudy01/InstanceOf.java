@@ -1,4 +1,4 @@
-package selfstudy;
+package selfstudy01;
 
 public class InstanceOf {
 
@@ -6,12 +6,12 @@ public class InstanceOf {
 		A ap = new B();
 		B bp = null;
 		
-		if(ap instanceof B) { //Çü½Ä : ÀÎ½ºÅÏ½º instanceof º¯È¯ÇÒ Å¬·¡½º
+		if(ap instanceof B) { //ï¿½ï¿½ï¿½ï¿½ : ï¿½Î½ï¿½ï¿½Ï½ï¿½ instanceof ï¿½ï¿½È¯ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
 			bp = (B)ap;
-			System.out.println("Çü º¯È¯ÀÌ °¡´ÉÇÕ´Ï´Ù");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½");
 		}
 		else {
-			System.out.println("Çü º¯È¯ÀÌ ºÒ°¡´É ÇÕ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ ï¿½Ò°ï¿½ï¿½ï¿½ ï¿½Õ´Ï´ï¿½.");
 		}
 	}
 

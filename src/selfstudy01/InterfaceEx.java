@@ -1,4 +1,4 @@
-package day30;
+package selfstudy01;
 
 public class InterfaceEx {
 

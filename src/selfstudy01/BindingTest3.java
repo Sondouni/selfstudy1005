@@ -1,4 +1,4 @@
-package selfstudy;
+package selfstudy01;
 
 public class BindingTest3 {
 	public static void main(String[] args) {

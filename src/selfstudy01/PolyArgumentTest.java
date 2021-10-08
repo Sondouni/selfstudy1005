@@ -1,4 +1,4 @@
-package day20210928;
+package selfstudy01;
 
 public class PolyArgumentTest {
 
@@ -14,8 +14,8 @@ public class PolyArgumentTest {
 		b.buy(tv);
 		
 		
-		System.out.println("ÇöÀç ³²Àºµ·Àº "+ b.money + "¸¸¿ø ÀÔ´Ï´Ù");
-		System.out.println("ÇöÀç º¸³Ê½º Á¡¼ö´Â "+b.myBonus + "Á¡ ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "+ b.money + "ï¿½ï¿½ï¿½ï¿½ ï¿½Ô´Ï´ï¿½");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ê½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "+b.myBonus + "ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.");
 	}
 
 }
@@ -26,18 +26,18 @@ class Product{
 		this.price = x;
 	}
 }
-//ÀÚ½ÄÅ¬·¡½º¿¡¼­ »ý¼ºÀÚ¸¦ È£ÃâÇÏ¸é ºÎ¸ðÅ¬·¡½ºÀÇ »ý¼ºÀÚ¸¦ ÀÚµ¿ÀûÀ¸·Î È£ÃâÇÏ´Â°¡????¾Æ´Ï´Ù
-//ÀÚ½ÄÅ¬·¡½º¿¡¼­ super() ÇÏ¸é ºÎ¸ðÅ¬·¡½ºÀÇ »ý¼ºÀÚ¸¦ È£ÃâÇÏ´Â°Í
+//ï¿½Ú½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ È£ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Î¸ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½Ï´Â°ï¿½????ï¿½Æ´Ï´ï¿½
+//ï¿½Ú½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ super() ï¿½Ï¸ï¿½ ï¿½Î¸ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ È£ï¿½ï¿½ï¿½Ï´Â°ï¿½
 class Tv extends Product{
 	Tv(){
 	super(100);
-	System.out.println("TV¸¦ ±¸¸ÅÇÏ¼Ì½À´Ï´Ù");
+	System.out.println("TVï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½");
 	}
 }
 class Computer extends Product{
 	Computer(){
 	super(200);
-	System.out.println("Computer¸¦ ±¸¸ÅÇÏ¼Ì½À´Ï´Ù");
+	System.out.println("Computerï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½");
 	}
 }
 class Buyer{
@@ -45,8 +45,8 @@ class Buyer{
 	int myBonus = 0;
 	void buy(Product p) {
 		if(this.money<=0) {
-			System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÏ¿© ¹°°ÇÀ» »ì¼ö ¾ø½À´Ï´Ù.");
-			System.out.println("±¸¸Å ¹°Ç° Ãë¼Ò");
+			System.out.println("ï¿½Ü¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç° ï¿½ï¿½ï¿½");
 			return;
 		}
 		this.money -= p.price;
